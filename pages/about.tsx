@@ -31,7 +31,7 @@ const About = () => {
               >
                 @Piyush
               </a>
-              a Frontend Engineer and aspirant full stack engineer, learning to
+              a Frontend Engineer and aspiring full stack engineer, learning to
               build fast and delightful experiences on the web. I'm also
               passionate about Web Standards, Web performance, Animations,
               WebGL, and Ethereum.
