@@ -30,7 +30,7 @@ const About = () => {
                 rel="noopenner noreferrer"
               >
                 @Piyush
-              </a>
+              </a>{' '}
               a Frontend Engineer and aspiring full stack engineer, learning to
               build fast and delightful experiences on the web. I'm also
               passionate about Web Standards, Web performance, Animations,
