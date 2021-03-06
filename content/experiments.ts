@@ -12,7 +12,7 @@ export const experiments: IExperiments[] = [
     title: 'Simplreact',
     description:
       'A Simple version of react written in typescript where, I made to learn internals of react fiber and hooks.',
-    link: 'https://github.com/piyushimrwa/Simplreact',
+    link: 'https://github.com/piyushimraw/Simplreact',
     tags: ['React Fiber', 'React Hooks', 'JavaScript'],
     date: 'Apr, 2020',
     location: 'github',
