@@ -1,6 +1,6 @@
-import styled from "@emotion/styled";
-import { css } from "@emotion/core";
-import { GitHub, Codepen, Twitter } from "react-feather";
+import styled from '@emotion/styled';
+import { css } from '@emotion/core';
+import { GitHub, Codepen, Twitter, Mail } from 'react-feather';
 
 export const StyledFooterSection = styled.footer`
   .footer-container {
@@ -41,5 +41,9 @@ export const TwitterIcon = styled(Twitter)`
   ${IconStyles}
 `;
 export const CodepenIcon = styled(Codepen)`
+  ${IconStyles}
+`;
+
+export const MailIcon = styled(Mail)`
   ${IconStyles}
 `;

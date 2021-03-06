@@ -4,6 +4,7 @@ import {
   GitHubIcon,
   CodepenIcon,
   TwitterIcon,
+  MailIcon,
 } from './styles/footer.styles';
 import { Container } from './container';
 
@@ -30,6 +31,17 @@ const Footer = () => (
             rel="noreferrer noopener"
           >
             <TwitterIcon />
+          </a>
+        </li>
+
+        <li className="footerSocialLink">
+          <a
+            className="footerLink"
+            href="mailto:piyush.srivastavaimraw@gmail.com"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <MailIcon />
           </a>
         </li>
       </ul>

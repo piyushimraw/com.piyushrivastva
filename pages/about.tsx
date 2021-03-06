@@ -1,9 +1,9 @@
-import React from "react";
-import { useRouter } from "next/router";
-import Image from 'next/image'
+import React from 'react';
+import { useRouter } from 'next/router';
+import Image from 'next/image';
 
-import { Layout, Container } from "../components";
-import { StyledAbout } from "../components/styles/about.styles";
+import { Layout, Container } from '../components';
+import { StyledAbout } from '../components/styles/about.styles';
 
 /**
  * About page `/about`
@@ -23,34 +23,34 @@ const About = () => {
               <Image src="/images/avatar.jpg" width={200} height={200} />
             </div>
             <p>
-              I'm{" "}
+              I'm{' '}
               <a
-                href="https://twitter.com/vick_OnRails"
+                href="https://twitter.com/piyushrivastva"
                 target="_blank"
                 rel="noopenner noreferrer"
               >
-                @Victor
+                @Piyush
               </a>
-              , a Designer and Frontend Engineer learning to build fast and
-              delightful experiences on the web. I'm also passionate about Web
-              Standards, Design Systems and Learning in Public.
+              , a and Frontend Engineer learning to build fast and delightful
+              experiences on the web. I'm also passionate about Web Standards,
+              Web performance, Animations, WebGL, and Ethereum.
             </p>
             <p>
-              Aside from my day job, I work on a few side projects to help
-              designers and engineers build with speed
+              Aside from my day job, I work on a few side projects to keep my
+              skills up to date.
             </p>
 
             <p>
-              I work heavily with ReactJs, Redux, Styled Components, Figma,
-              Storybook & recently picked up C#/Dotnet Core for backend APIs. If
-              you're excited about any of the following, please shoot at me on{" "}
+              I work heavily with ReactJs, Redux, Styled Components, Next.js &
+              recently picked up Node.js (express) for backend APIs. If you're
+              excited about any of the following, please shoot at me on{' '}
               <a
-                href="https://twitter.com/vick_OnRails"
+                href="https://twitter.com/piyushrivastva"
                 target="_blank"
                 rel="noopenner noreferrer"
               >
                 Twitter
-              </a>{" "}
+              </a>{' '}
               and let's be friends 😊.
             </p>
           </div>
