@@ -79,7 +79,7 @@ const Layout = ({
       </Head>
       <Nav />
       {menuOpen ? (
-        <MobileNav />
+        // <MobileNav />
       ) : (
         <>
           <Header pathname={pathname} title={pageTitle} />
