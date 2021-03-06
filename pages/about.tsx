@@ -31,9 +31,10 @@ const About = () => {
               >
                 @Piyush
               </a>
-              , a and Frontend Engineer learning to build fast and delightful
-              experiences on the web. I'm also passionate about Web Standards,
-              Web performance, Animations, WebGL, and Ethereum.
+              a Frontend Engineer and aspirant full stack engineer, learning to
+              build fast and delightful experiences on the web. I'm also
+              passionate about Web Standards, Web performance, Animations,
+              WebGL, and Ethereum.
             </p>
             <p>
               Aside from my day job, I work on a few side projects to keep my
