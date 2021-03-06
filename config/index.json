@@ -1,16 +1,16 @@
 {
   "author": {
-    "name": "Peacock",
-    "title": "NextJS Starter Peacock",
-    "twitterHandle": "@vick_onrails",
-    "description": "Hi! My name is <a href=\"\">Victor</a>, I love to design and build modern experiences on the web. I also love learning in public and working on little side projects that help others build things faster. This starter is my gift to you and I hope it helps somehow 🙏🏾"
+    "name": "Piyush Shrivastava",
+    "title": " Piyush Shrivastava",
+    "twitterHandle": "@piyushrivastva",
+    "description": "Hi! My name is <a href=\"\">Piyush</a>, I love to build modern experiences on the web. I love trying out cutting edge technology and also working on little side projects that help others build things faster."
   },
   "site": {
-    "siteUrl": "https://victorofoegbu.com",
-    "siteName": "Peacock",
-    "siteTitle": "NextJS Starter Peacock",
-    "siteDescription": "Peacock is a Nextjs starter for Personal Sites/Portfolios made by @vick_onrails",
-    "keywords": "JavaScript, NextJS, Software Engineer, Nigeria Software Engineer, Lagos Software Engineer, JavaScript Engineer Nigeria, ReactJS Engineer Nigeria, Product Designer Nigeria, Victor Ofoegbu",
+    "siteUrl": "https://piyushrivastva.tech",
+    "siteName": "Piyush Shrivastava",
+    "siteTitle": " Hi!, Piyush Shrivastava",
+    "siteDescription": "Web realm of Piyush Shrivastava",
+    "keywords": "JavaScript, NextJS, Software Engineer, India Software Engineer, Delhi Software Engineer, JavaScript Engineer Delhi India, ReactJS Engineer Delhi India",
     "siteImage": "../public/Logo.png"
   }
 }

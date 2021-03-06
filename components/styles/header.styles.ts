@@ -1,6 +1,7 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const StyledHomeHeading = styled.div`
+  min-height: 100vh;
   @media (min-width: 1024px) {
     .header-container {
       max-width: 70%;
