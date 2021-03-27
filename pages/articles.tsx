@@ -1,7 +1,7 @@
-import React from "react";
-import { Layout, Container, Cards } from "../components";
-import { useRouter } from "next/router";
-import { getContentList } from "../lib/content";
+import React from 'react';
+import { Layout, Container, Cards } from '../components';
+import { useRouter } from 'next/router';
+import { getContentList } from '../lib/content';
 
 /**
  * Article page `/articles`
@@ -22,8 +22,8 @@ const Articles = ({ articles }) => {
         </p>
 
         <blockquote>
-          All articles here are for demo purposes. But hey, the sky is the limit
-          🚀
+          Repository of things I learn and find interesting in Frontend Web
+          Development and software engineering.
         </blockquote>
         <Cards data={articles} basePath="articles" />
       </Container>
@@ -32,7 +32,7 @@ const Articles = ({ articles }) => {
 };
 
 export const getStaticProps = async () => {
-  const articles = getContentList("articles");
+  const articles = getContentList('articles');
   return {
     props: { articles },
   };
