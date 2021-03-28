@@ -14,7 +14,7 @@ tags:
 
 ## Spotlight
 
-Throttle and Debounce are two ways to ways to optimise event handling in javascript.
+Throttle and Debounce are two ways to optimise event handling in javascript.
 These function can control respose rate of handlers to an event. I.E we can control how many times handler function or some other function call in handler function should be called on each event handler callback.
 Let's understand how these two work.
 
