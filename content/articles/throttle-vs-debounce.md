@@ -2,7 +2,7 @@
 title: Throttle vs debounce
 date: "2020-01-03"
 slug: "throttle-vs-debounce"
-previewImage: "/images/articles/article-preview.png"
+previewImage: "/images/articles/throttle-vs-debouce.png"
 description: "Difference between throttle and debounce and their implementation"
 category: weekly-notes
 tags:
