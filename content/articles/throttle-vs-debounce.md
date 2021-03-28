@@ -81,3 +81,78 @@ Hi Piyush, Logged At 02:11:45
 Hi Piyush, Logged At 02:11:47
 Hi Piyush, Logged At 02:11:49
 ```
+
+## Debounce
+
+Debounce is a function which have similar signature to throttle `function debounce(func, delay)` where `func` is function that needs to be debounced and `delay` in `ms` is duration from last function call.
+
+`debounce` will also return a function, which we can call and pass some arguments.
+
+> It make sure that debounced function `func` is invoked only after `delay` amount of time has been passed since it's last call.
+
+
+#### Use Scenario
+
+`debounce` function should be used in places where we don't need an intermediate state and only want to call handler function after end of some event.
+
+#### Use case
+
+- Async Search Suggestion
+- Batched request to server from client side
+
+#### Implementation
+
+```js
+
+/**
+ *
+ * @param {(args: any) => void} func
+ * @param {Number} delay - time in ms
+ */
+function debounce(func, delay) {
+  let timeout;
+  return function (...args) {
+    // clear previous timeout when function is called again
+    clearTimeout(timeout);
+    // timeout and schedule next function call
+    // if returning function is called again
+    // this scheduled call will be cleared
+    timeout = setTimeout(() => {
+      timeout = null;
+      return func.apply(this, args);
+    }, delay);
+  };
+}
+
+const debouncedLog = debounce(
+  (name) =>
+    console.log(`
+    Hi ${name},
+    called at ${new Date().toLocaleTimeString()}
+`),
+  900
+);
+
+
+const debouncedLog = debounce(
+  (name) =>
+    console.log(`
+    Hi ${name},
+    called at ${new Date().toLocaleTimeString()}
+`),
+  900
+);
+
+setInterval(() => debouncedLog('Piyush'), 3000);
+
+```
+
+Output
+
+```
+ Hi Piyush,
+ called at 00:02:30
+
+ Hi Piyush,
+ called at 00:02:33
+```
