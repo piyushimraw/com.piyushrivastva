@@ -1,6 +1,6 @@
 ---
-title: Throttle vs debounce
-date: "2020-01-03"
+title: Throttle vs Debounce
+date: "2021-28-03"
 slug: "throttle-vs-debounce"
 previewImage: "/images/articles/throttle-vs-debouce.png"
 description: "Difference between throttle and debounce and their implementation"
