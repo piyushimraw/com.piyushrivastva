@@ -38,6 +38,13 @@ const Nav = () => {
                 </Link>
               </li>
             </ul>
+            <ul className="navLinkList">
+              <li className="navLinkItem">
+                <Link href="/articles">
+                  <a>Articles</a>
+                </Link>
+              </li>
+            </ul>
           </div>
         </nav>
       </Container>

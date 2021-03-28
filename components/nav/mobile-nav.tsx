@@ -19,6 +19,11 @@ const MobileNav = () => {
               <a className="link">About</a>
             </Link>
           </li>
+          <li className="listItem">
+            <Link href="/articles">
+              <a className="link">Articles</a>
+            </Link>
+          </li>
         </ul>
       </div>
     </StyledMobileNav>
