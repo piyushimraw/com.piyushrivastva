@@ -9,6 +9,9 @@ import { getContentList } from '../lib/content';
 
 const Articles = ({ articles }) => {
   const { pathname } = useRouter();
+  const filteredArticles = articles.filter(
+    (article) => article.slug !== 'test'
+  );
   return (
     <Layout
       pathname={pathname}
@@ -25,7 +28,7 @@ const Articles = ({ articles }) => {
           Repository of things I learn and find interesting in Frontend Web
           Development and software engineering.
         </blockquote>
-        <Cards data={articles} basePath="articles" />
+        <Cards data={filteredArticles} basePath="articles" />
       </Container>
     </Layout>
   );
