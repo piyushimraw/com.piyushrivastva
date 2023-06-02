@@ -1,5 +1,5 @@
 import React from "react";
-import Image from 'next/image'
+import Image from "next/image";
 
 import { Container } from "./container";
 import { StyledDesignPlus } from "./styles/index.styles";
@@ -21,7 +21,13 @@ const DesignCode = () => {
           </p>
         </div>
         <div className="image">
-          <Image src="/images/article-preview.png" height={200} width={350} sizes="(min-width: 759px) 800px"/>
+          <Image
+            src="/images/article-preview.png"
+            height={200}
+            width={350}
+            sizes="(min-width: 759px) 800px"
+            alt="Design to Code"
+          />
         </div>
       </Container>
     </StyledDesignPlus>
