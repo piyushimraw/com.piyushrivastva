@@ -1,6 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
-import Image from 'next/image'
+import Image from "next/image";
 
 import { Layout, Container } from "../../components";
 import { getAllContentIds, getContentData } from "../../lib/content";
@@ -20,7 +20,14 @@ const Article = ({ worksData }) => {
       <Container width="narrow">
         <StyledContent>
           <time>{worksData.date}</time>
-          {worksData.previewImage && <Image src={worksData.previewImage} height={550} width={1200} />}
+          {worksData.previewImage && (
+            <Image
+              src={worksData.previewImage}
+              height={550}
+              width={1200}
+              alt="work"
+            />
+          )}
           <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
         </StyledContent>
       </Container>

@@ -2,11 +2,13 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { v4 as uuid } from "uuid";
-import { exception } from "console";
-import remark from "remark";
-import html from "remark-html";
+import { unified } from "unified";
+import remarkParse from "remark-parse";
+import rehypeStringify from "rehype-stringify";
 import remarkPrism from "remark-prism";
 import { IContentData } from "../pages/articles/[id]";
+import remarkHtml from "remark-html";
+import { remark } from "remark";
 
 const workDirectory = path.join(process.cwd(), "content", "work");
 const notesDirectory = path.join(process.cwd(), "content", "notes");
@@ -41,7 +43,7 @@ export const getAllContentIds = (contentType: IContentType) => {
       break;
 
     default:
-      throw new exception("You have to provide a content type");
+      throw new Error("You have to provide a content type");
   }
 
   // return the slug of all the content IDs
@@ -87,7 +89,7 @@ export const getContentData = async (id: string, contentType: IContentType) => {
       break;
 
     default:
-      throw new exception("You have to provide a content type");
+      throw new Error("You have to provide a content type");
   }
 
   // loop through all the content types and compare the slug to get the filename
@@ -108,8 +110,10 @@ export const getContentData = async (id: string, contentType: IContentType) => {
 
   const matterResult = matter(fileContents);
   const processedContent = await remark()
-    .use(html)
     .use(remarkPrism)
+    .use(remarkHtml, {
+      sanitize: false,
+    })
     .process(matterResult.content);
 
   const contentHtml = processedContent.toString();

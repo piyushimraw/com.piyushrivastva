@@ -22,7 +22,12 @@ const Note = ({ notesData }) => {
         <StyledContent>
           <time>{notesData.date}</time>
           {notesData.previewImage && (
-            <Image src={notesData.previewImage} height={550} width={1200} />
+            <Image
+              src={notesData.previewImage}
+              height={550}
+              width={1200}
+              alt="note"
+            />
           )}
           <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
           {notesData.tags && <Chips items={notesData.tags} />}

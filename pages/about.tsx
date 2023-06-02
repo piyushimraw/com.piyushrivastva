@@ -1,9 +1,9 @@
-import React from 'react';
-import { useRouter } from 'next/router';
-import Image from 'next/image';
+import React from "react";
+import { useRouter } from "next/router";
+import Image from "next/image";
 
-import { Layout, Container } from '../components';
-import { StyledAbout } from '../components/styles/about.styles';
+import { Layout, Container } from "../components";
+import { StyledAbout } from "../components/styles/about.styles";
 
 /**
  * About page `/about`
@@ -20,17 +20,22 @@ const About = () => {
         <Container width="narrow">
           <div className="postContent">
             <div className="avatarImage">
-              <Image src="/images/avatar.jpg" width={200} height={200} />
+              <Image
+                src="/images/avatar.jpg"
+                width={200}
+                height={200}
+                alt="my image"
+              />
             </div>
             <p>
-              I'm{' '}
+              I'm{" "}
               <a
                 href="https://twitter.com/piyushrivastva"
                 target="_blank"
                 rel="noopenner noreferrer"
               >
                 @Piyush
-              </a>{' '}
+              </a>{" "}
               a Frontend Engineer and aspiring full stack engineer, learning to
               build fast and delightful experiences on the web. I'm also
               passionate about Web Standards, Web performance, Animations,
@@ -44,14 +49,14 @@ const About = () => {
             <p>
               I work heavily with ReactJs, Redux, Styled Components, Next.js &
               recently picked up Node.js (express) for backend APIs. If you're
-              excited about any of the following, please shoot at me on{' '}
+              excited about any of the following, please shoot at me on{" "}
               <a
                 href="https://twitter.com/piyushrivastva"
                 target="_blank"
                 rel="noopenner noreferrer"
               >
                 Twitter
-              </a>{' '}
+              </a>{" "}
               and let's be friends 😊.
             </p>
           </div>

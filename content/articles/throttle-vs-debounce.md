@@ -28,7 +28,7 @@ Now `throttle` will return a function, which we can call and pass some arguments
 
 > throttled function are called once per `T` amount of time and any additional calls within specified time will be ignored.
 
-#### Use Scenario
+### Use Scenario for Throttle
 
 As it can consistently call a function for recurring and frequent operation.
 We can use `throttle`, when we want a consistent function execution within a given timeframe.
@@ -38,11 +38,9 @@ We can use `throttle`, when we want a consistent function execution within a giv
 - Any Consistent UI Update after `resize`.
 - Computation on client or server side.
 
-
 #### Implementation
 
-
-```js
+```javascript
 /**
  *
  *
@@ -75,7 +73,7 @@ setInterval(() => throttledLog('Piyush'), 100);
 
 Output
 
-```
+``` log
 Hi Piyush, Logged At 02:11:43
 Hi Piyush, Logged At 02:11:45
 Hi Piyush, Logged At 02:11:47
@@ -90,8 +88,7 @@ Debounce is a function which have similar signature to throttle `function deboun
 
 > It make sure that debounced function `func` is invoked only after `delay` amount of time has been passed since it's last call.
 
-
-#### Use Scenario
+### Use Scenario for Debounce
 
 `debounce` function should be used in places where we don't need an intermediate state and only want to call handler function after end of some event.
 
@@ -100,9 +97,9 @@ Debounce is a function which have similar signature to throttle `function deboun
 - Async Search Suggestion
 - Batched request to server from client side
 
-#### Implementation
+### Implementation for Debounce
 
-```js
+```javascript
 
 /**
  *
@@ -149,10 +146,10 @@ setInterval(() => debouncedLog('Piyush'), 3000);
 
 Output
 
-```
+``` log
  Hi Piyush,
- called at 00:02:30
+called at 00:02:30
 
- Hi Piyush,
- called at 00:02:33
+Hi Piyush,
+called at 00:02:33
 ```

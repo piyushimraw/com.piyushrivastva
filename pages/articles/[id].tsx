@@ -21,7 +21,12 @@ const Article = ({ articlesData }: { articlesData: IContentData }) => {
         <StyledContent>
           <time>{articlesData.date}</time>
           {articlesData.previewImage && (
-            <Image src={articlesData.previewImage} height={550} width={1200} />
+            <Image
+              src={articlesData.previewImage}
+              height={550}
+              width={1200}
+              alt="Article Image"
+            />
           )}
           <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
           {articlesData.tags && <Chips items={articlesData.tags} />}
@@ -42,7 +47,7 @@ export const getStaticPaths = async () => {
 export interface IContentData {
   id: string;
   contentHtml: string;
-  date: Date;
+  date: string;
   title: string;
   previewImage?: string;
   description?: string;

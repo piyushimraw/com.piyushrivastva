@@ -1,6 +1,7 @@
 import { AppProps } from "next/app";
 
 import "../components/styles/layout.css";
+import "prismjs/themes/prism-tomorrow.css";
 
 /**
  * Root level component for all pages

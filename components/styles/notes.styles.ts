@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export const StyledNoteLink = styled.a`
+export const StyledNoteLink = styled.span`
   text-decoration: none;
   cursor: pointer;
 `;

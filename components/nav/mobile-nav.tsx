@@ -1,7 +1,7 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
-import { StyledMobileNav } from '../styles/nav.styles';
+import { StyledMobileNav } from "../styles/nav.styles";
 
 const MobileNav = () => {
   return (
@@ -10,18 +10,18 @@ const MobileNav = () => {
         <ul className="linkList">
           <li className="listItem">
             <Link href="/">
-              <a className="link">Home</a>
+              <span className="link">Home</span>
             </Link>
           </li>
 
           <li className="listItem">
             <Link href="/about">
-              <a className="link">About</a>
+              <span className="link">About</span>
             </Link>
           </li>
           <li className="listItem">
             <Link href="/articles">
-              <a className="link">Articles</a>
+              <span className="link">Articles</span>
             </Link>
           </li>
         </ul>
