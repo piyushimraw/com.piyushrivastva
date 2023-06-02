@@ -10,7 +10,7 @@ interface ICard {
     title: string;
     id: string;
     slug: string;
-    date: Date;
+    date: string;
     previewImage: string;
     description: string;
   }[];

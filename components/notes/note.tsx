@@ -7,7 +7,7 @@ export interface INote {
   title: string;
   id: string;
   slug: string;
-  date: Date;
+  date: string;
   basePath: string;
 }
 
