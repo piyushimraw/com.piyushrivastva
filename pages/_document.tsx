@@ -8,25 +8,9 @@ export default class MyDocument extends Document {
       <Html lang="en-us">
         <Head>
           {/* Global Site Tag (gtag.js) - Google Analytics */}
-          <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=${ANALYTICS_ID}`}
-          />
           <link
             href={`https://unpkg.com/prismjs@0.0.1/themes/prism-okaidia.css`}
             rel="stylesheet"
-          />
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'GTM-K4N28SV', {
-              page_path: window.location.pathname,
-            });
-          `,
-            }}
           />
         </Head>
         <body>
