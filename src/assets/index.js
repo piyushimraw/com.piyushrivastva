@@ -29,6 +29,9 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import leenalogo from "./company/leena.jpeg";
+import mindticklelogo from "./company/mindtickle.png";
+import partsavatarlogo from "./company/partsavatar.jpeg";
 
 export {
   logo,
@@ -59,4 +62,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  leenalogo,
+  mindticklelogo,
+  partsavatarlogo,
 };
