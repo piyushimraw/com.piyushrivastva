@@ -45,20 +45,12 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Full stack Javascript Developer",
     icon: web,
   },
   {
     title: "React Native Developer",
     icon: mobile,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
   },
 ];
 
@@ -108,10 +100,6 @@ const technologies = [
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
-  },
-  {
     name: "docker",
     icon: docker,
   },
@@ -119,12 +107,13 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Software Development Engineer 2",
+    title: "Software Engineer 2",
     company_name: "MindTickle",
     icon: mindticklelogo,
     iconBg: "#383E56",
     date: "Oct 2022 - Present",
     points: [
+      "Working in core readiness team to maintain and develop new features for MindTickle's core product. ",
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
@@ -132,29 +121,30 @@ const experiences = [
     ],
   },
   {
-    title: "Software Development Engineer 2",
+    title: "Software Engineer 2",
     company_name: "Partsavatar",
     icon: partsavatarlogo,
     iconBg: "#E6DEDD",
     date: "Aug 2021 - Aug 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Migrated entire CMS frontend from Angular.js to React.js.",
+      "Implemented new design for Homepage, Product Listing Page, Product Detail Page.",
+      "Implemented data ingestion pipeline using AWS Lambda, S3, SQS, SNS, DynamoDB, and ElasticSearch.",
+      "Participated in code reviews and provided constructive feedback to other developers.",
     ],
   },
   {
-    title: "Software Development Engineer",
+    title: "Software Engineer",
     company_name: "Leena AI",
     icon: leenalogo,
     iconBg: "#383E56",
     date: "Jan 2019 - July 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed and maintained web based chat application using React.js and Redux.",
+      "Developed and maintained Chatbot flow builder application using React.js, Redux and Three.js.",
+      "Developed and maintained Mobile application using React Native.",
+      "Developed marketing website using Next.js.",
+      "Developed and maintained backend services using Node.js, Express.js and MongoDB.",
     ],
   },
 ];
