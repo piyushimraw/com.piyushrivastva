@@ -1,11 +1,5 @@
 "use client";
-import {
-  Decal,
-  Float,
-  OrbitControls,
-  Preload,
-  useTexture,
-} from "@react-three/drei";
+import { Decal, Float, Preload, useTexture } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import React, { Suspense } from "react";
 import { Loader } from "./CanvasLoader";
@@ -13,7 +7,7 @@ import { Loader } from "./CanvasLoader";
 const Ball = ({ icon }: { icon: any }) => {
   const [decal] = useTexture([icon.src]);
   return (
-    <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
+    <>
       <ambientLight intensity={0.5} />
       <directionalLight position={[0, 0, 0.05]} intensity={1} />
       <mesh castShadow receiveShadow scale={2.75}>
@@ -31,7 +25,7 @@ const Ball = ({ icon }: { icon: any }) => {
           flatShading
         />
       </mesh>
-    </Float>
+    </>
   );
 };
 
