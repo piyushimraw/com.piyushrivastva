@@ -17,10 +17,6 @@ const nextConfig = {
   //   styledComponents: true,
   // },
   reactStrictMode: true, // Recommended for the `pages` directory, default in `app`.
-  experimental: {
-    reactRoot: "concurrent",
-    appDir: true,
-  },
   images: {},
   webpack(config, { isServer }) {
     // audio support
@@ -83,7 +79,6 @@ module.exports = (_phase, { defaultConfig }) => {
 
   return finalConfig;
 };
-
 
 // Injected content via Sentry wizard below
 
