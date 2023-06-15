@@ -2,7 +2,15 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../constant/styles";
-import { ComputersCanvas } from "./canvas";
+import dynamic from "next/dynamic";
+
+const ComputersCanvas = dynamic(
+  () => import("../components/canvas/Computers"),
+  {
+    loading: () => <p>Loading...</p>,
+    ssr: false,
+  }
+);
 
 const Hero = () => {
   return (

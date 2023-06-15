@@ -1,7 +1,12 @@
 import React from "react";
-import { BallCanvas } from "./canvas";
 import SectionWrapper from "./SectionWrapper";
 import { technologies } from "@/constant/content";
+import dynamic from "next/dynamic";
+
+const BallCanvas = dynamic(() => import("../components/canvas/Ball"), {
+  loading: () => <p>Loading...</p>,
+  ssr: false,
+});
 
 const Tech = () => {
   return (

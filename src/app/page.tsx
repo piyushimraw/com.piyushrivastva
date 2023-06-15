@@ -2,7 +2,6 @@ import {
   Hero,
   Navbar,
   About,
-  Contact,
   Experience,
   Feedbacks,
   Tech,
@@ -10,6 +9,12 @@ import {
   StarsCanvas,
 } from "@/components";
 import SectionWrapper from "@/components/SectionWrapper";
+import dynamic from "next/dynamic";
+
+const Contact = dynamic(() => import("../components/Contact"), {
+  loading: () => <p>Loading...</p>,
+  ssr: false,
+});
 
 export default function Home() {
   return (
