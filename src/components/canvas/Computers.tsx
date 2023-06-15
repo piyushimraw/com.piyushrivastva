@@ -26,11 +26,13 @@ const Computers = () => {
   const direction = useRef(1);
   useFrame((state, delta) => {
     if (ref.current) {
-      ref.current.rotation.y += direction.current * (delta / 5);
-      if (ref.current.rotation.y > 0.5 || ref.current.rotation.y < -0.6) {
+      if (ref.current.rotation.y > 0.2 || ref.current.rotation.y < -0.5) {
         direction.current *= -1;
+      } else {
+        direction.current *= 1;
       }
     }
+    ref.current.rotation.y += direction.current * 0.0007;
   });
 
   return (
