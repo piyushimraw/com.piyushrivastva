@@ -73,12 +73,8 @@ const Contact = () => {
           <p className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
             Contact
           </p>
-          <form
-            ref={formRef}
-            onSubmit={handleSubmit}
-            className="flex flex-col gap-8 mt-12"
-          >
-            <label className="flex flex-col">
+          <div ref={formRef} className="flex flex-col gap-8 mt-12">
+            <div className="flex flex-col">
               <span className="mb-4 font-medium text-white">Your Name</span>
               <input
                 type="text"
@@ -88,8 +84,8 @@ const Contact = () => {
                 placeholder="What's your good name?"
                 className="px-6 py-4 font-medium text-white border-none rounded-lg outline-none bg-tertiary placeholder:text-secondary"
               />
-            </label>
-            <label className="flex flex-col">
+            </div>
+            <div className="flex flex-col">
               <span className="mb-4 font-medium text-white">Your email</span>
               <input
                 type="email"
@@ -99,8 +95,8 @@ const Contact = () => {
                 placeholder="What's your web address?"
                 className="px-6 py-4 font-medium text-white border-none rounded-lg outline-none bg-tertiary placeholder:text-secondary"
               />
-            </label>
-            <label className="flex flex-col">
+            </div>
+            <div className="flex flex-col">
               <span className="mb-4 font-medium text-white">Your Message</span>
               <textarea
                 rows={7}
@@ -110,15 +106,14 @@ const Contact = () => {
                 placeholder="What you want to say?"
                 className="px-6 py-4 font-medium text-white border-none rounded-lg outline-none bg-tertiary placeholder:text-secondary"
               />
-            </label>
-
+            </div>
             <button
-              type="submit"
+              onClick={handleSubmit}
               className="px-8 py-3 font-bold text-white shadow-md outline-none bg-tertiary rounded-xl w-fit shadow-primary"
             >
               {loading ? "Sending..." : "Send"}
             </button>
-          </form>
+          </div>
         </div>
 
         <div className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
