@@ -29,8 +29,6 @@ const Navbar = () => {
     setActive(window.location.hash.slice(1));
   }, []);
 
-  console.log(active);
-
   return (
     <nav
       className={`${styles.paddingX} flex items-center py-5 fixed top-0 z-20 bg-primary w-full`}
