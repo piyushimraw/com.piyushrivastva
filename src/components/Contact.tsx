@@ -86,17 +86,6 @@ const Contact = () => {
               />
             </div>
             <div className="flex flex-col">
-              <span className="mb-4 font-medium text-white">Your email</span>
-              <input
-                type="email"
-                name="email"
-                value={form.email}
-                onChange={handleChange}
-                placeholder="What's your web address?"
-                className="px-6 py-4 font-medium text-white border-none rounded-lg outline-none bg-tertiary placeholder:text-secondary"
-              />
-            </div>
-            <div className="flex flex-col">
               <span className="mb-4 font-medium text-white">Your Message</span>
               <textarea
                 rows={7}
