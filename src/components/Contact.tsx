@@ -2,8 +2,13 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
-import { EarthCanvas } from "./canvas";
 import SectionWrapper from "./SectionWrapper";
+import dynamic from "next/dynamic";
+
+const EarthCanvas = dynamic(() => import("./canvas/Earth"), {
+  loading: () => <p>Loading...</p>,
+  ssr: false,
+});
 
 const Contact = () => {
   const formRef = useRef(null);
