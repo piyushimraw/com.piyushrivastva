@@ -11,7 +11,6 @@ import React, { Suspense } from "react";
 import { Loader } from "./CanvasLoader";
 
 const Ball = ({ icon }: { icon: any }) => {
-  console.log(icon);
   const [decal] = useTexture([icon.src]);
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
