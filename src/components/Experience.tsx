@@ -81,7 +81,7 @@ const Experience = () => {
           {experiences.map((experience, index) => (
             <ExperienceCard
               experience={experience}
-              key={experience.title}
+              key={experience.company_name + experience.title}
               index={index}
             />
           ))}
