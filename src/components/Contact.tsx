@@ -121,7 +121,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
+        <div className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] hidden lg:block">
           <EarthCanvas />
         </div>
       </div>

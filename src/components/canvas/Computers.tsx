@@ -34,7 +34,7 @@ const Computers = () => {
         direction.current *= 1;
       }
     }
-    ref.current.rotation.y += direction.current * 0.0007;
+    ref.current.rotation.y += direction.current * 0.003;
   });
 
   return (
