@@ -31,6 +31,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import leenalogo from "./company/leena.jpeg";
 import mindticklelogo from "./company/mindtickle.png";
+import squadcastlogo from "./company/squadcast.png";
 import partsavatarlogo from "./company/partsavatar.jpeg";
 
 export {
@@ -65,4 +66,5 @@ export {
   leenalogo,
   mindticklelogo,
   partsavatarlogo,
+  squadcastlogo
 };

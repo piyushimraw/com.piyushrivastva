@@ -26,6 +26,7 @@ import {
   leenalogo,
   mindticklelogo,
   partsavatarlogo,
+  squadcastlogo
 } from "../assets";
 
 export const navLinks = [
@@ -113,23 +114,24 @@ const experiences = [
     iconBg: "#383E56",
     date: "Oct 2022 - Present",
     points: [
-      "Working in core readiness team to maintain and develop new features for MindTickle's core product. ",
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed and implemented an on-call utility CLI application in Golang, empowering on-call engineers to efficiently execute common tasks in Run-books, resulting in a 40% reduction in incident response time. ",
+      "Written AWS lambda to consume SQS events for async workflows such as generate a certificate, send completion /. reminder email for the assessment using Golang",
+      "Worked on and delivered core readiness Learning Apps features using React.js, GraphQL which helped us to renew customer accounts amounting to 2 million dollars.",
+      "Improved frontend codebase code coverage from 30% to 80% and added playwright based automated smoke test for critical user paths (sign in, create module, update module, delete module), along with Jest and React Testing Library to test common hooks and reusable components.",
+      "Worked on Mindtickle mobile App and developed features for learner's app such as integration of topics in Assessment, Auto attendance feature for ILT. using React Native.link https://play.google.com/store/apps/details?id=com.mindtickle&hl=en_IN&gl=US",
+      "Participated in code reviews and provided constructive feedback to other developers.",
     ],
   },
   {
     title: "Software Engineer 2",
-    company_name: "Partsavatar",
-    icon: partsavatarlogo,
+    company_name: "Squadcast",
+    icon: squadcastlogo,
     iconBg: "#E6DEDD",
     date: "Aug 2021 - Aug 2022",
     points: [
-      "Migrated entire CMS frontend from Angular.js to React.js.",
-      "Implemented new design for Homepage, Product Listing Page, Product Detail Page.",
-      "Implemented data ingestion pipeline using AWS Lambda, S3, SQS, SNS, DynamoDB, and ElasticSearch.",
+      "Worked and Revamped Squadcast Mobile Application and owned both Android and iOS release pipeline, worked on following features using React Native:  Overriding mobile  DND /. Silent mode to deliver high priority incident notification, Incident listing page using React native virtualised list, Implemented automated testing for critical screens",
+      "Added Microsoft teams integration as notification channel and released it in Microsoft Teams marketplace used Golang to write backend service and consumed events from HTTP calls https://appsource.microsoft.com/en-us/product/office/wa200004390?tab=overview",
+      "Worked on incident-specific slack / Microsoft teams and other collaboration channel features and used Golang to write backend service and MongoDB for persistence.",
       "Participated in code reviews and provided constructive feedback to other developers.",
     ],
   },
